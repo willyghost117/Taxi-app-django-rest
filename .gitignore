@@ -1,0 +1,7 @@
+# Ignorar archivos de configuración local
+*.env
+*.pyc
+myenv/
+# Ignorar directorios generados automáticamente
+__pycache__/
+.vscode/
