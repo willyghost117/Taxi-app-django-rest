@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-k3=x7-%3vcyk7svv4y&u%=shxo7on@$9mf!8ip4e(50*yx6l&8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -137,11 +138,11 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.AnonRateThrottle',
         'rest_framework.throttling.UserRateThrottle',
-    ],
-    'DEFAULT_THROTTLE_RATES':{
-        'anon':'1/day',
-        'user':'3/day'
-    }
+    ]#,
+    #'DEFAULT_THROTTLE_RATES':{
+    #    'anon':'1/day',
+    #    'user':'3/day'
+    #}
 }
 
 SIMPLE_JWT = {
